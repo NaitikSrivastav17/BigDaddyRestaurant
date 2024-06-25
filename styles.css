@@ -18,6 +18,7 @@ header{
     min-width:40px;
     max-width:100px;
     white-space: nowrap;
+    font-weight: 900;
 }
 nav{
     display:flex;
@@ -41,7 +42,7 @@ li{
 }
 .homebutt{
     padding:5px 8px;
-    border-radius: 12px;
+    border-radius: 2px;
     font-weight: 600;
     background-color:orange;
     
@@ -101,7 +102,7 @@ main,section,footer{
     min-height:400px;
     height:auto;
     width:auto;
-    animation:divine 4s infinite ease;
+    animation:divine 5s infinite ease;
 }
 .button1{
     color:black;
@@ -115,6 +116,12 @@ main,section,footer{
     transition:padding 1s;
 }
 .button1:hover{
+    filter:brightness(150%);
+    padding:15px 50px;
+    transition: all 1s;
+}
+.button.active{
+    filter:brightness(150%);
     padding:15px 50px;
     transition: all 1s;
 }
@@ -148,6 +155,6 @@ main,section,footer{
 }
 @keyframes divine{
     0%{transform:translateY(0%)}
-    50%{transform:translateY(-10%)}
+    50%{transform:translateY(-15%)}
     100%{transform:translateY(0%)}
 }

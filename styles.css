@@ -1,0 +1,153 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+    font-weight:normal;
+    font-style: normal;
+    color:white;
+    background:radial-gradient(rgb(69, 69, 69),rgb(0, 0, 0));
+}
+header{
+    background-color:black;
+
+
+}
+.logo{
+    display:inline-block;
+    min-width:40px;
+    max-width:100px;
+    white-space: nowrap;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    text-align: center;
+    max-width:1200px;
+    min-width:100vw;
+    width:auto;
+    animation:fade 2s;
+    
+    
+}
+ul{
+    list-style: none;
+    display:flex;
+    gap:2vw;
+}
+li{
+    color:white;
+}
+.homebutt{
+    padding:5px 8px;
+    border-radius: 12px;
+    font-weight: 600;
+    background-color:orange;
+    
+}
+.homebutt:hover{
+    box-shadow: 0px 0px 0px 2px black;
+    transition: all 0.8s
+}
+
+a{
+    text-decoration: none;
+    color:white;
+    transition:border 0.8s;
+    
+}
+
+a:hover{
+    border-bottom:1px solid white;
+    transition:all 0.8s;
+}
+h1{
+    font-weight:normal;
+    font-style: normal;
+    text-align:center;
+    animation:transform 2s;
+
+}
+.h1{
+    font-weight:normal;
+    font-style: normal;
+    text-align:center;
+    animation:transformup 2s;
+}
+h2{
+    animation:fade 2s;
+    animation-timeline: view();
+    animation-range: entry 0 cover 100%;
+}
+main,section,footer{
+    text-align: center;
+}
+
+.burger{
+    max-width:70vw;
+    min-width:400px;
+    max-height:40vh;
+    min-height:400px;
+    height:auto;
+    width:auto;
+    animation:getbig 2s;
+
+}
+.pizza{
+    max-width:70vw;
+    min-width:400px;
+    max-height:40vh;
+    min-height:400px;
+    height:auto;
+    width:auto;
+    animation:divine 4s infinite ease;
+}
+.button1{
+    color:black;
+    font-family: "Montserrat", sans-serif;
+    font-weight:600;
+    border: none;
+    border-radius:12px;
+    padding:15px 30px;
+    background: linear-gradient(180deg,red,yellow);
+    cursor: pointer;
+    transition:padding 1s;
+}
+.button1:hover{
+    padding:15px 50px;
+    transition: all 1s;
+}
+.offers{
+    font-weight: normal;
+    font-size:2em;
+    animation:fade 2s;
+    animation-timeline: view();
+    animation-range: entry 0 cover 100%;
+}
+
+@keyframes getbig{
+    from{
+        scale:0.5;
+        opacity:0;
+    }
+    to{scale:1;
+    opacity:1;}
+}
+@keyframes transform{
+    from{transform:translateY(-75%)}
+    to{transform:translateY(0%)}
+}
+@keyframes transformup{
+    from{transform:translateY(75%)}
+    to{transform:translateY(0%)}
+}
+@keyframes fade{
+    from{opacity:0}
+    to{opacity:1}
+}
+@keyframes divine{
+    0%{transform:translateY(0%)}
+    50%{transform:translateY(-10%)}
+    100%{transform:translateY(0%)}
+}

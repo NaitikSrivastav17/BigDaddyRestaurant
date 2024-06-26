@@ -99,10 +99,10 @@ main,section,footer{
     max-width:70vw;
     min-width:400px;
     max-height:40vh;
-    min-height:366px;
+    min-height:400px;
     height:auto;
     width:auto;
-    animation:divine 3.5s infinite ease;
+    animation:divine 5s infinite ease;
 }
 .button1{
     color:black;
@@ -114,6 +114,9 @@ main,section,footer{
     background: linear-gradient(180deg,red,yellow);
     cursor: pointer;
     transition:padding 1s;
+    animation:fade 2s;
+    animation-timeline: view();
+    animation-range: entry 0 cover 80%;
 }
 .button1:hover{
     filter:brightness(150%);
@@ -155,6 +158,6 @@ main,section,footer{
 }
 @keyframes divine{
     0%{transform:translateY(0%)}
-    50%{transform:translateY(-10%)}
+    50%{transform:translateY(-15%)}
     100%{transform:translateY(0%)}
 }

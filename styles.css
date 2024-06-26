@@ -99,10 +99,10 @@ main,section,footer{
     max-width:70vw;
     min-width:400px;
     max-height:40vh;
-    min-height:400px;
+    min-height:366px;
     height:auto;
     width:auto;
-    animation:divine 5s infinite ease;
+    animation:divine 3.5s infinite ease;
 }
 .button1{
     color:black;
@@ -155,6 +155,6 @@ main,section,footer{
 }
 @keyframes divine{
     0%{transform:translateY(0%)}
-    50%{transform:translateY(-15%)}
+    50%{transform:translateY(-10%)}
     100%{transform:translateY(0%)}
 }

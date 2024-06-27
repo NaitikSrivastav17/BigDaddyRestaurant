@@ -61,12 +61,7 @@ a{
     color:white;
     transition:border 0.8s;
     
-}
-
-a:hover{
-    border-bottom:1px solid white;
-    transition:all 0.8s;
-}
+}
 h1{
     font-weight:normal;
     font-style: normal;

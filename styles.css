@@ -16,6 +16,8 @@ header{
 .logo{
     display:inline-block;
     min-width:20px;
+    word-spacing:1px;
+    letter-spacing:0px;
     max-width:100px;
     white-space: nowrap;
     font-weight: 900;
@@ -41,14 +43,14 @@ li{
     color:white;
 }
 .homebutt{
-    padding:5px 8px;
+    padding:2.5px 5px;
     border-radius: 2px;
     font-weight: 600;
     background-color:orange;
     
 }
 .homebutt:hover{
-    box-shadow: 0px 0px 0px 2px black;
+    background-color:rgb(255, 106, 0);
     transition: all 0.8s
 }
 

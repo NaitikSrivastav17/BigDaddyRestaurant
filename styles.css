@@ -7,6 +7,8 @@ body{
     font-style: normal;
     color:white;
     background:radial-gradient(rgb(69, 69, 69),rgb(0, 0, 0));
+    padding:0;
+    margin:0;
 }
 header{
     background-color:black;
@@ -30,7 +32,7 @@ nav{
     max-width:1200px;
     min-width:100vw;
     width:auto;
-    animation:fade 2s;
+    animation:fade 4s;
     
     
 }
@@ -43,17 +45,16 @@ li{
     color:white;
 }
 .homebutt{
-    padding:2.5px 5px;
-    border-radius: 2px;
+    padding:10px 15px;
+    border-radius: 25px;
     font-weight: 600;
-    background-color:orange;
-    
-    
+    background: linear-gradient(90deg,red,yellow);
+    transition:padding 0.8s;
 }
 .homebutt:hover{
-    border-radius:15px;
-    background-color:rgb(255, 106, 0);
-    transition: all 1s;
+    padding:10px 25px;
+    transition: all 0.8s
+   
 }
 
 a{
@@ -61,7 +62,8 @@ a{
     color:white;
     transition:border 0.8s;
     
-}
+}
+
 h1{
     font-weight:normal;
     font-style: normal;
@@ -113,7 +115,7 @@ main,section,footer{
     background: linear-gradient(180deg,red,yellow);
     cursor: pointer;
     transition:padding 1s;
-    animation:fade 2s;
+    animation:fade 2s,getbig 4s;
     animation-timeline: view();
     animation-range: entry 0 cover 80%;
 }
@@ -130,18 +132,22 @@ main,section,footer{
 .offers{
     font-weight: normal;
     font-size:2em;
-    animation:fade 2s;
+    animation:fade 2s,getbig 4s;
     animation-timeline: view();
     animation-range: entry 0 cover 100%;
 }
+.expl{
+    font-weight: normal;font-size:2.5em;
+    animation:fade 2s,getbig 4s;
+    animation-timeline: view();
+    animation-range: entry 0 cover 100%;
 
+}
 @keyframes getbig{
     from{
         scale:0.5;
-        opacity:0;
     }
-    to{scale:1;
-    opacity:1;}
+    to{scale:1;}
 }
 @keyframes transform{
     from{transform:translateY(-75%)}

@@ -68,17 +68,17 @@ h1{
     font-weight:normal;
     font-style: normal;
     text-align:center;
-    animation:transform 2s;
+    animation:transform 2s, fade 2s;
 
 }
 .h1{
     font-weight:normal;
     font-style: normal;
     text-align:center;
-    animation:transformup 2s;
+    animation:transformup 2s, fade 2s;
 }
 h2{
-    animation:fade 2s;
+    animation:fade 4s;
     animation-timeline: view();
     animation-range: entry 0 cover 100%;
 }
@@ -115,7 +115,7 @@ main,section,footer{
     background: linear-gradient(180deg,red,yellow);
     cursor: pointer;
     transition:padding 1s;
-    animation:fade 2s,getbig 4s;
+    animation:fade 4s,getbig 4s;
     animation-timeline: view();
     animation-range: entry 0 cover 100%;
 }
@@ -132,13 +132,13 @@ main,section,footer{
 .offers{
     font-weight: normal;
     font-size:2em;
-    animation:fade 2s,getbig 4s;
+    animation:fade 4s,getbig 4s;
     animation-timeline: view();
     animation-range: entry 0 cover 100%;
 }
 .expl{
     font-weight: normal;font-size:2.5em;
-    animation:fade 2s,getbig 4s;
+    animation:fade 4s,getbig 4s;
     animation-timeline: view();
     animation-range: entry 0 cover 100%;
 

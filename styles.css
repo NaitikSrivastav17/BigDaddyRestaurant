@@ -78,7 +78,7 @@ h1{
     animation:transformup 2s, fade 2s;
 }
 h2{
-    animation:fade 4s;
+    animation:fade 10s, getbig 10s;
     animation-timeline: view();
     animation-range: entry 0 cover 50%;
 }
@@ -93,7 +93,7 @@ main,section,footer{
     min-height:400px;
     height:auto;
     width:auto;
-    animation:getbig 2s;
+    animation:getbig 2.5s;
 
 }
 .pizza{
@@ -115,7 +115,7 @@ main,section,footer{
     background: linear-gradient(180deg,red,yellow);
     cursor: pointer;
     transition:padding 1s;
-    animation:fade 4s,getbig 4s;
+    animation:fade 10s,getbig 10s;
     animation-timeline: view();
     animation-range: entry 0 cover 50%;
 }
@@ -132,13 +132,13 @@ main,section,footer{
 .offers{
     font-weight: normal;
     font-size:2em;
-    animation:fade 4s,getbig 4s;
+    animation:fade 10s,getbig 10s;
     animation-timeline: view();
     animation-range: entry 0 cover 50%;
 }
 .expl{
     font-weight: normal;font-size:2.5em;
-    animation:fade 4s,getbig 4s;
+    animation:fade 10s,getbig 10s;
     animation-timeline: view();
     animation-range: entry 0 cover 50%;
 

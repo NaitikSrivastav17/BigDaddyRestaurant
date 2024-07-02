@@ -23,6 +23,7 @@ header{
     max-width:100px;
     white-space: nowrap;
     font-weight: 900;
+    margin-left:15px; ;
 }
 nav{
     display:flex;
@@ -30,7 +31,8 @@ nav{
     align-items:center;
     text-align: center;
     max-width:1200px;
-    min-width:100vw;
+    min-width:95vw;
+    gap:2vw;
     width:auto;
     animation:fade 4s;
     
@@ -44,22 +46,17 @@ ul{
 li{
     color:white;
 }
-.homebutt{
-    padding:10px 15px;
-    border-radius: 25px;
-    font-weight: 600;
-    background: linear-gradient(90deg,orange,#FFA500);
-    transition:padding 0.8s;
+
+.material-symbols-outlined{
+    font-size:1.75em;
+    color:orange;
+    margin-right: 2vw;;
 }
-.homebutt:hover{
-    padding:10px 25px;
-    transition: all 0.8s
-   
+.material-symbols-outlined:hover{
+    font-size: 1.9em;
 }
-.homebutt:active{
-    padding:10px 25px;
-    transition: all 0.8s
-   
+.material-symbols-outlined:active{
+    font-size: 1.9em;
 }
 a{
     text-decoration: none;
@@ -72,19 +69,19 @@ h1{
     font-weight:normal;
     font-style: normal;
     text-align:center;
-    animation:transform 2s, fade 2s;
+    animation:transform 2s;
 
 }
 .h1{
     font-weight:normal;
     font-style: normal;
     text-align:center;
-    animation:transformup 2s, fade 2s;
+    animation:transformup 2s;
 }
 h2{
-    animation:fade 10s, getbig 10s;
+    animation:fade 2s;
     animation-timeline: view();
-    animation-range: entry 0 cover 50%;
+    animation-range: entry 0 cover 100%;
 }
 main,section,footer{
     text-align: center;
@@ -97,7 +94,7 @@ main,section,footer{
     min-height:400px;
     height:auto;
     width:auto;
-    animation:getbig 2.5s;
+    animation:getbig 2s;
 
 }
 .pizza{
@@ -119,9 +116,9 @@ main,section,footer{
     background: linear-gradient(180deg,red,yellow);
     cursor: pointer;
     transition:padding 1s;
-    animation:fade 10s,getbig 10s;
+    animation:fade 2s,getbig 4s;
     animation-timeline: view();
-    animation-range: entry 0 cover 50%;
+    animation-range: entry 0 cover 80%;
 }
 .button1:hover{
     filter:brightness(150%);
@@ -136,15 +133,15 @@ main,section,footer{
 .offers{
     font-weight: normal;
     font-size:2em;
-    animation:fade 10s,getbig 10s;
+    animation:fade 2s,getbig 4s;
     animation-timeline: view();
-    animation-range: entry 0 cover 50%;
+    animation-range: entry 0 cover 100%;
 }
 .expl{
     font-weight: normal;font-size:2.5em;
-    animation:fade 10s,getbig 10s;
+    animation:fade 2s,getbig 4s;
     animation-timeline: view();
-    animation-range: entry 0 cover 50%;
+    animation-range: entry 0 cover 100%;
 
 }
 @keyframes getbig{
